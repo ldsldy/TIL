@@ -74,11 +74,11 @@ body {
   font-size: 50px;
   justify-content: center;
   align-items: center;
-  /* background-color: red; */
+  background-color: red;
 }
 
 .container-list {
-  /* background-color: blue; */
+  background-color: blue;
   align-self: center;
 }
 .container-bottom {
