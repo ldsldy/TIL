@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hello! From HTML!</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <form id="login-form" class="hidden">
+      <!-- required 필수입력 max최대입력  -->
+      <input required max="15" type="text" placeholder="What is your name?" />
+      <button>Log In</button>
+    </form>
+    <div class="container">
+      <div class="container-top">
+        <div class="container-link">Link</div>
+        <form class="container-weather">weather</form>
+      </div>
+      <div class="above-middle"></div>
+      <div class="content-middle">
+        <form class="item-clock">
+          <p id="clock" class="item-clock">00:00:00</p>
+        </form>
+        <form class="item-greeting">
+          <p id="greeting" class="hidden greeting-string"></p>
+        </form>
+      </div>
+      <div class="container-center-below">
+        <form class="container-list" id="todo-form">
+          What is your main focus for today?
+          <input
+            type="text"
+            placeholder="Write a To Do and Press Enter"
+            required
+          />
+        </form>
+        <ul id="todo-list"></ul>
+      </div>
+      <form class="container-bottom">
+        <div id="quote" class="quotes-string">
+          <span></span>
+          <span></span>
+        </div>
+      </form>
+    </div>
+    <!-- <img src="img/2.jpg" /> -->
+    <script src="js/greeting.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/backgrounds.js"></script>
+    <script src="js/todo.js"></script>
+  </body>
+</html>
