@@ -1,6 +1,6 @@
 // ch-ua-form-factor=();
-const form = document.querySelector("#search-bar");
-const SearchContent = document.querySelector("#search-bar input");
+const form = document.querySelector("#search_bar");
+const SearchContent = document.querySelector("#search_bar input");
 
 function onSearchSubmit(event) {
   event.preventDefault();

@@ -32,13 +32,11 @@ body {
 }
 
 .container-link {
-  flex: 30%;
-  font-size: 1.7rem;
-  font-weight: 530;
+  flex: 50%;
   display: flex;
   padding-left: 20px;
-  padding-top: 20px;
-  background-color: red;
+  align-items: flex-start;
+  /* background-color: red; */
 }
 
 .container-weather {

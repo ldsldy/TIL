@@ -23,11 +23,22 @@
     <div class="container">
       <div class="container-top">
         <div class="container-link">
-          <label>Links</label>
-          <form id="search_bar">
-            <div class="icon"><i class="fa-solid fa-magnifying-glass"></i></div>
-            <input type="text" class="search_bar_input underline" />
-          </form>
+          <label class="links">Links</label>
+          <div class="dashlinks"></div>
+          <div class="input_contain">
+            <form id="search_form">
+              <div class="underline">
+                <i
+                  class="fa-thin fa-horizontal-rule"
+                  style="color: #ffffff"
+                ></i>
+              </div>
+              <div class="icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+              <input type="text" class="search_bar_input underline" />
+            </form>
+          </div>
         </div>
         <div class="container-weather">
           <span id="weather"></span>
@@ -74,5 +85,6 @@
     <script src="js/todo.js"></script>
     <script src="js/weather.js"></script>
     <script src="js/search.js"></script>
+    <script src="js/hoverimg.js"></script>
   </body>
 </html>
