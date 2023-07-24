@@ -1,0 +1,38 @@
+.icon {
+  position: absolute;
+  color: white;
+  justify-content: space-between;
+  top: 5px;
+  right: 10px;
+  left: 20px;
+  background-color: black;
+  z-index: 0;
+}
+
+.underline {
+  border: none;
+  border-bottom: solid 1px;
+  border-width: 4px;
+  background: transparent;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+.search_bar_input {
+  color: white;
+  flex: auto;
+  margin-left: 1rem;
+  font-size: 1.5rem;
+  width: 300px;
+  padding-bottom: 10px;
+  z-index: -1;
+}
+
+#search_bar {
+  display: flex;
+  justify-content: left;
+  position: relative;
+  /* background-color: yellow; */
+  margin-bottom: 10px;
+  z-index: 1;
+}

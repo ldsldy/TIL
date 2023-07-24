@@ -32,16 +32,21 @@ body {
 }
 
 .container-link {
-  flex: 20%;
+  flex: 30%;
   font-size: 1.7rem;
-  /* background-color: aliceblue; */
+  font-weight: 530;
+  display: flex;
+  padding-left: 20px;
+  padding-top: 20px;
+  background-color: red;
 }
+
 .container-weather {
   flex: 80%;
   font-size: 1.2rem;
   text-align: right;
   size: 20px;
-  /* background-color: yellow; */
+  /* background-color: darkcyan; */
 }
 
 .above-middle {
@@ -74,11 +79,11 @@ body {
   font-size: 50px;
   justify-content: center;
   align-items: center;
-  background-color: red;
+  /* background-color: red; */
 }
 
 .container-list {
-  background-color: blue;
+  /* background-color: blue; */
   align-self: center;
 }
 .container-bottom {

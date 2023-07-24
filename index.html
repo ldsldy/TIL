@@ -3,8 +3,15 @@
   <head>
     <title>Hello! From HTML!</title>
     <meta charset="UTF-8" />
+    <meta http-equiv="Permission-Policy" content="interest-cohort=()" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/base_style.css" rel="stylesheet" />
+    <link href="css/media_style.css" rel="stylesheet" />
+    <link href="css/container_top.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
   </head>
   <body>
     <form id="login-form" class="hidden">
@@ -15,7 +22,13 @@
 
     <div class="container">
       <div class="container-top">
-        <div class="container-link">Link</div>
+        <div class="container-link">
+          <label>Links</label>
+          <form id="search_bar">
+            <div class="icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <input type="text" class="search_bar_input underline" />
+          </form>
+        </div>
         <div class="container-weather">
           <span id="weather"></span>
           <span id="temperature"></span>
@@ -60,5 +73,6 @@
     <script src="js/backgrounds.js"></script>
     <script src="js/todo.js"></script>
     <script src="js/weather.js"></script>
+    <script src="js/search.js"></script>
   </body>
 </html>
