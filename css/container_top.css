@@ -1,13 +1,12 @@
 .underline {
   position: absolute;
   border-bottom: 4px solid white;
-  width: 100%;
-  margin-top: 25%;
+  width: 400px;
+  margin-top: 70px;
   margin-left: 10px;
-  background-color: darkblue;
+  /* background-color: darkblue; */
   z-index: -1;
   opacity: 0;
-  /* visibility: hidden; */
 }
 
 .dashlinks {
@@ -16,27 +15,28 @@
 }
 
 .links {
-  padding-top: 5%;
+  padding-top: 20px;
   height: 100%;
-  margin-top: 5px;
   font-size: 1.7rem;
   font-weight: 530;
   /* background-color: aqua; */
 }
 
 .input_contain {
-  flex: 2 2 auto;
   width: 100%;
   position: relative;
   height: 100%;
-  display: inline-block;
-  cursor: pointer;
+
+  /* background-color: aliceblue; */
 }
 
 #search_form {
   position: relative;
   width: 100%;
   height: 100%;
+  cursor: pointer;
+  display: inline-block;
+  flex: 2 2 auto;
   /* background-color: gainsboro; */
 }
 
@@ -56,7 +56,7 @@
   color: white;
   border: none;
   width: 100%;
-  height: 4rem;
+  height: 90%;
   margin-left: 1rem;
   font-size: 1.5rem;
   width: 300px;
