@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="css/base_style.css" rel="stylesheet" />
     <link href="css/media_style.css" rel="stylesheet" />
-    <link href="css/container_top.css" rel="stylesheet" />
+    <link href="css/container_top_link.css" rel="stylesheet" />
+    <link href="css/container_top_weather.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -37,12 +38,18 @@
         </div>
 
         <div class="container-weather">
-          <div>
-            <div id="weather_icon">
-              <img src="" alt="" />
+          <div class="weather_matrix">
+            <div class="weather_temperature">
+              <div id="weather_icon">
+                <img src="" alt="" />
+              </div>
+              <div class="container_temperature">
+                <span id="temperature"></span>
+              </div>
             </div>
-            <span id="temperature"></span>
-            <span id="city"></span>
+            <div class="container_city">
+              <span id="city"></span>
+            </div>
           </div>
         </div>
       </div>

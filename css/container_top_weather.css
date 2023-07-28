@@ -1,0 +1,48 @@
+.container-weather {
+  display: flex;
+  flex-direction: row-reverse;
+  flex: 80%;
+  font-size: 1.2rem;
+  size: 20px;
+  /* background-color: darkcyan; */
+}
+
+.weather_matrix {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+  /* background-color: red; */
+}
+
+.weather_temperature {
+  display: flex;
+  flex-direction: row;
+  /* background-color: red; */
+  margin-bottom: -20px;
+}
+#weather_icon {
+  /* background-color: antiquewhite; */
+  align-items: right;
+}
+
+.container_temperature {
+  /* background-color: beige; */
+  align-items: center;
+  display: table;
+}
+
+#temperature {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: left;
+  font-size: 2.2rem;
+  font-weight: 540;
+}
+
+.container_city {
+  grid-row: 2/-1;
+  grid-column: 1/3;
+  font-size: 1.3rem;
+  text-align: center;
+  /* background-color: aqua; */
+}

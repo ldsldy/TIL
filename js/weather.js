@@ -16,7 +16,7 @@ function onGeoSuccess(position) {
       weatherIcon.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
       weatherIcon.alt = data.weather[0].main;
       city.innerText = data.name;
-      temperature.innerText = data.main.temp;
+      temperature.innerText = Math.round(data.main.temp) + "\u00b0C";
     });
 }
 

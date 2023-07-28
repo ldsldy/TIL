@@ -25,7 +25,7 @@ body {
 }
 
 .container-top {
-  height: 90px;
+  height: 140px;
   display: flex;
   flex-direction: row;
   /* background-color: antiquewhite; */
@@ -37,15 +37,6 @@ body {
   padding-left: 20px;
   align-items: flex-start;
   /* background-color: red; */
-}
-
-.container-weather {
-  display: flex;
-  flex-direction: row-reverse;
-  flex: 80%;
-  font-size: 1.2rem;
-  size: 20px;
-  /* background-color: darkcyan; */
 }
 
 .above-middle {
