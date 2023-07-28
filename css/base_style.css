@@ -40,9 +40,10 @@ body {
 }
 
 .container-weather {
+  display: flex;
+  flex-direction: row-reverse;
   flex: 80%;
   font-size: 1.2rem;
-  text-align: right;
   size: 20px;
   /* background-color: darkcyan; */
 }

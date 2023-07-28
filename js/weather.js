@@ -9,12 +9,13 @@ function onGeoSuccess(position) {
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
-      const weather = document.querySelector("#weather");
+      const weatherIcon = document.querySelector("#weather_icon img");
       const city = document.querySelector("#city");
       const temperature = document.querySelector("#temperature");
-      console.log(data.name, data.weather[0].main);
+
+      weatherIcon.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+      weatherIcon.alt = data.weather[0].main;
       city.innerText = data.name;
-      weather.innerText = data.weather[0].main;
       temperature.innerText = data.main.temp;
     });
 }

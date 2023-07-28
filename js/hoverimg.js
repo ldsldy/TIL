@@ -2,32 +2,35 @@ const LinkUnderLine = document.querySelector(".underline");
 const SearchBox = document.querySelector("#search_form");
 const InputBox = document.querySelector(".search_bar_input");
 
+let isFocused = false;
+
+// 인풋박스가 포커스 상태면 현상유지
+// 아니면 언더라인을 보여줌
 function drawLinkUnderLine() {
-  LinkUnderLine.style.opacity = 0.6;
+  if (isFocused === true) {
+  } else {
+    LinkUnderLine.style.opacity = 0.6;
+  }
 }
 
+// 인풋박스가 포커스 상태면 현상유지
+// 아니면 언더라인을 제거
 function hideLinkUnderLine() {
-  LinkUnderLine.style.opacity = 0;
+  if (isFocused === true) {
+  } else {
+    LinkUnderLine.style.opacity = 0;
+  }
 }
-
-// SearchBox.addEventListener("mouseover", drawLinkUnderLine);
-// SearchBox.addEventListener("mouseleave", hideLinkUnderLine);
 
 InputBox.onfocus = function () {
-  console.log("focused on input");
-  console.log(InputBox.className);
-  console.log(document.activeElement.className);
   LinkUnderLine.style.opacity = 1;
+  isFocused = true;
 };
 
 InputBox.onblur = function () {
-  console.log("focused out input");
+  isFocused = false;
   LinkUnderLine.style.opacity = 0;
 };
 
-if (document.activeElement.className != InputBox.className) {
-  console.log(InputBox.className);
-  console.log(document.activeElement.className);
-  SearchBox.addEventListener("mouseover", drawLinkUnderLine);
-  SearchBox.addEventListener("mouseleave", hideLinkUnderLine);
-}
+SearchBox.addEventListener("mouseenter", drawLinkUnderLine);
+SearchBox.addEventListener("mouseleave", hideLinkUnderLine);
