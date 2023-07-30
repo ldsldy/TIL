@@ -1,3 +1,6 @@
+/* rem 최상의 폰트 크기에 따라 크기가 바뀜 */
+/* vw,wh 뷰포트 값에 따라 크기가 바뀜 */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -31,16 +34,8 @@ body {
   /* background-color: antiquewhite; */
 }
 
-.container-link {
-  flex: 50%;
-  display: flex;
-  padding-left: 20px;
-  align-items: flex-start;
-  /* background-color: red; */
-}
-
 .above-middle {
-  flex-grow: 3.5;
+  flex-grow: 1.5;
 }
 
 .content-middle {

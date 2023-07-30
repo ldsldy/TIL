@@ -1,4 +1,4 @@
-const LinkUnderLine = document.querySelector(".underline");
+const LinkUnderLine = document.querySelector(".link_underline");
 const SearchBox = document.querySelector("#search_form");
 const InputBox = document.querySelector(".search_bar_input");
 

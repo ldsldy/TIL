@@ -9,6 +9,7 @@
     <link href="css/media_style.css" rel="stylesheet" />
     <link href="css/container_top_link.css" rel="stylesheet" />
     <link href="css/container_top_weather.css" rel="stylesheet" />
+    <link href="css/container-center-below.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -27,7 +28,7 @@
           <label class="links">Links</label>
           <div class="dashlinks"></div>
           <form id="search_form">
-            <div class="underline">
+            <div class="link_underline">
               <i class="fa-thin fa-horizontal-rule" style="color: #ffffff"></i>
             </div>
             <div class="icon">
@@ -66,6 +67,24 @@
       </div>
 
       <div class="container-center-below">
+        <form class="focus_today">
+          <div>What is your main focus for today?</div>
+          <div class="focus_underline">
+            <i class="fa-thin fa-horizontal-rule" style="color: #ffffff"></i>
+          </div>
+          <input type="text" class="focus_today_input" />
+        </form>
+      </div>
+
+      <div>
+        <form class="container-bottom">
+          <div id="quote" class="quotes-string">
+            <span></span>
+            <span></span>
+          </div>
+        </form>
+      </div>
+      <div>
         <form class="container-list" id="todo-form">
           What is your main focus for today?
           <input
@@ -77,13 +96,6 @@
         </form>
         <ul id="todo-list"></ul>
       </div>
-
-      <form class="container-bottom">
-        <div id="quote" class="quotes-string">
-          <span></span>
-          <span></span>
-        </div>
-      </form>
     </div>
     <!-- <img src="img/2.jpg" /> -->
     <script src="js/greeting.js"></script>

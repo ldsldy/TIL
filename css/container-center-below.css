@@ -1,0 +1,26 @@
+.focus_today_input {
+  color: white;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 3rem;
+  margin-top: 1rem;
+  width: 50rem;
+  text-align: center;
+}
+
+.focus_today {
+  margin-top: -150px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+  /* background-color: aliceblue; */
+}
+
+.focus_underline {
+  border-bottom: 4px solid white;
+  position: absolute;
+  width: 50rem;
+  margin-top: 150px;
+}
