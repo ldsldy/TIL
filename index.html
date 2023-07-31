@@ -67,34 +67,40 @@
       </div>
 
       <div class="container-center-below">
-        <form class="focus_today">
-          <div>What is your main focus for today?</div>
-          <div class="focus_underline">
-            <i class="fa-thin fa-horizontal-rule" style="color: #ffffff"></i>
+        <div class="focus_today_container">
+          <div class="today_container">
+            <h3>TODAY</h3>
+            <div>focus</div>
           </div>
-          <input type="text" class="focus_today_input" />
-        </form>
+          <form class="focus_today">
+            <div>What is your main focus for today?</div>
+            <div class="focus_underline">
+              <i class="fa-thin fa-horizontal-rule" style="color: #ffffff"></i>
+            </div>
+            <input type="text" class="focus_today_input" />
+          </form>
+        </div>
       </div>
 
-      <div>
-        <form class="container-bottom">
+      <div class="container-bottom">
+        <form>
           <div id="quote" class="quotes-string">
             <span></span>
             <span></span>
           </div>
         </form>
-      </div>
-      <div>
-        <form class="container-list" id="todo-form">
-          What is your main focus for today?
-          <input
-            type="text"
-            placeholder="Write a To Do and Press Enter"
-            required
-            tabindex="2"
-          />
-        </form>
-        <ul id="todo-list"></ul>
+        <div>
+          <form class="container-list" id="todo-form">
+            What is your main focus for today?
+            <input
+              type="text"
+              placeholder="Write a To Do and Press Enter"
+              required
+              tabindex="2"
+            />
+          </form>
+          <ul id="todo-list"></ul>
+        </div>
       </div>
     </div>
     <!-- <img src="img/2.jpg" /> -->

@@ -35,10 +35,12 @@ body {
 }
 
 .above-middle {
-  flex-grow: 1.5;
+  flex-grow: 2;
+  /* background-color: aliceblue; */
 }
 
 .content-middle {
+  flex: 2;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -59,11 +61,11 @@ body {
 }
 
 .container-center-below {
-  flex-grow: 2;
+  flex-grow: 1;
   display: flex;
   font-size: 50px;
   justify-content: center;
-  align-items: center;
+  /* align-items: top; */
   /* background-color: red; */
 }
 
@@ -72,7 +74,7 @@ body {
   align-self: center;
 }
 .container-bottom {
-  flex-grow: 1.5;
+  flex-grow: 0.5;
   text-align: center;
   align-content: flex-end;
 }
