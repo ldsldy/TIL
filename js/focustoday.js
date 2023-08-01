@@ -1,14 +1,21 @@
 const focusTodayForm = document.querySelector(".focus_today");
 const focusTodayInput = document.querySelector(".focus_today_input");
+const focusTodayText = document.querySelector(".today_container div");
+const todayContainer = document.querySelector(".today_container");
 
 const FOCUSTODAY_KEY = "focustoday";
 
 let focusToday = [];
+
 function saveFocusToday() {
-  localStorage.setItem(FOCUSTODAY_KEY, JSON.stringify(toDos));
+  localStorage.setItem(FOCUSTODAY_KEY, JSON.stringify(focusToday));
 }
 
-function paintFocusToday() {}
+function paintFocusToday(newFocusTodayObj) {
+  focusTodayText.innerText = newFocusTodayObj.text;
+  focusTodayForm.style.visibility = "hidden";
+  todayContainer.style.visibility = "visible";
+}
 
 function handleFocusTodaySubmit(event) {
   event.preventDefault();

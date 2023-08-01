@@ -17,16 +17,13 @@
 .weather_temperature {
   display: flex;
   flex-direction: row;
-  /* background-color: red; */
   margin-bottom: -20px;
 }
 #weather_icon {
-  /* background-color: antiquewhite; */
   align-items: right;
 }
 
 .container_temperature {
-  /* background-color: beige; */
   align-items: center;
   display: table;
 }
