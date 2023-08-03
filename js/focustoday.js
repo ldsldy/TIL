@@ -1,6 +1,6 @@
 const focusTodayForm = document.querySelector(".focus_today");
 const focusTodayInput = document.querySelector(".focus_today_input");
-const focusTodayText = document.querySelector(".today_container div");
+const focusTodayText = document.querySelector(".today_list");
 const todayContainer = document.querySelector(".today_container");
 
 const FOCUSTODAY_KEY = "focustoday";
