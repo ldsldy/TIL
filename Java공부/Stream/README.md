@@ -1,6 +1,6 @@
-## Getting Started
+## 자바 공부
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+문제를 풀고 찾아가며 공부하는 자바 공부
 
 ## Folder Structure
 
