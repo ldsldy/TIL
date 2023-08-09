@@ -36,7 +36,7 @@
   align-items: center;
   justify-content: center;
   justify-items: center;
-  background-color: red;
+  /* background-color: red; */
 }
 
 .today_container {
@@ -46,7 +46,7 @@
   align-items: center;
   visibility: hidden;
   /* visibility: visible; */
-  background-color: aqua;
+  /* background-color: aqua; */
 }
 
 .today_container_check_list_dot {
