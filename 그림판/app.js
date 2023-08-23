@@ -1,8 +1,9 @@
 const canvas = document.querySelector("canvas");
+const lineWidth = document.getElementById("line-width");
 const ctx = canvas.getContext("2d");
 canvas.width = 800;
 canvas.height = 800;
-ctx.lineWidth = 2;
+ctx.lineWidth = lineWidth.value;
 let isPainting = false;
 function onMove(event) {
   if (isPainting) {
@@ -17,12 +18,18 @@ function onMouseDown() {
 }
 function cancelPainting() {
   isPainting = false;
+  ctx.beginPath();
 }
+function onLineWidthChange(event) {
+  ctx.lineWidth = event.target.value;
+}
+
 canvas.addEventListener("mousemove", onMove);
 canvas.addEventListener("mousedown", onMouseDown);
 canvas.addEventListener("mouseup", cancelPainting);
 canvas.addEventListener("mouseleave", cancelPainting);
 
+lineWidth.addEventListener("change", onLineWidthChange);
 // getContext("2d")는 HTML5 Canvas 요소에 2D 컨텍스트를 가져오는 데 사용되는 메서드입니다.
 // 2D 컨텍스트는 캔버스 요소에 2D 그래픽을 그리는 데 사용되는 API입니다.
 // getContext("2d") 메서드는 2D 컨텍스트를 가져온 후에는 다양한 메서드를 사용하여 캔버스 요소에 2D 그래픽을 그릴 수 있습니다.
