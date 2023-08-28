@@ -1,4 +1,5 @@
 const canvas = document.querySelector("canvas");
+const modeBtn = document.getElementById("mode-btn");
 const lineWidth = document.getElementById("line-width");
 const colorOptions = Array.from(
   //color-option 클래스는 여러개가 배열로 들어오므로 배열로 바꾸어 받아준다.
@@ -10,6 +11,7 @@ canvas.width = 800;
 canvas.height = 800;
 ctx.lineWidth = lineWidth.value;
 let isPainting = false;
+let isFilling = false;
 
 function onMove(event) {
   if (isPainting) {
@@ -39,16 +41,34 @@ function onColorClick(event) {
   ctx.fillStyle = colorValue;
   color.value = colorValue;
 }
+function onModeClick() {
+  if (isFilling) {
+    isFilling = false;
+    modeBtn.innerText = "Fill";
+  } else {
+    isFilling = true;
+    modeBtn.innerText = "Draw";
+  }
+}
+function onCanvasPainting() {
+  if (isFilling) {
+    ctx.fillRect(0, 0, 800, 800);
+  }
+}
 
 canvas.addEventListener("mousemove", onMove);
 canvas.addEventListener("mousedown", onMouseDown);
 canvas.addEventListener("mouseup", cancelPainting);
 canvas.addEventListener("mouseleave", cancelPainting);
+canvas.addEventListener("click", onCanvasPainting);
 
 lineWidth.addEventListener("change", onLineWidthChange);
 color.addEventListener("change", onColorChange);
 
 colorOptions.forEach((color) => color.addEventListener("click", onColorClick));
+
+modeBtn.addEventListener("click", onModeClick);
+
 // getContext("2d")는 HTML5 Canvas 요소에 2D 컨텍스트를 가져오는 데 사용되는 메서드입니다.
 // 2D 컨텍스트는 캔버스 요소에 2D 그래픽을 그리는 데 사용되는 API입니다.
 // getContext("2d") 메서드는 2D 컨텍스트를 가져온 후에는 다양한 메서드를 사용하여 캔버스 요소에 2D 그래픽을 그릴 수 있습니다.
