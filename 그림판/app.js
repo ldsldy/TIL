@@ -1,3 +1,4 @@
+const textInput = document.getElementById("text");
 const fileInput = document.getElementById("file");
 const canvas = document.querySelector("canvas");
 const modeBtn = document.getElementById("mode-btn");
@@ -81,7 +82,18 @@ function onFileChange(event) {
     fileInput.value = null;
   };
 }
+function onDoubleClick(event) {
+  const text = textInput.value;
+  if (text !== "") {
+    ctx.save(); //현재의 ctx상태를 저장
+    ctx.lineWidth = 1;
+    ctx.font = "48px serif";
+    ctx.fillText(text, event.offsetX, event.offsetY);
+    ctx.restore(); //save와의 사이에서 무엇이 바뀌었든 다시 전으로 복구
+  }
+}
 
+canvas.addEventListener("dblclick", onDoubleClick);
 canvas.addEventListener("mousemove", onMove);
 canvas.addEventListener("mousedown", onMouseDown);
 canvas.addEventListener("mouseup", cancelPainting);
