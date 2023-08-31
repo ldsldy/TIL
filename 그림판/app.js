@@ -1,3 +1,4 @@
+const saveBtn = document.getElementById("save");
 const textInput = document.getElementById("text");
 const fileInput = document.getElementById("file");
 const canvas = document.querySelector("canvas");
@@ -18,6 +19,7 @@ const CANVAS_HEIGHT = 800;
 canvas.width = 800;
 canvas.height = 800;
 ctx.lineWidth = lineWidth.value;
+ctx.lineCap = "round";
 let isPainting = false;
 let isFilling = false;
 
@@ -92,6 +94,13 @@ function onDoubleClick(event) {
     ctx.restore(); //save와의 사이에서 무엇이 바뀌었든 다시 전으로 복구
   }
 }
+function onSaveClick() {
+  const url = canvas.toDateURL(); //캔버스의 정보가 저장되는 방식
+  const a = document.createElement("a"); //a태그 생성
+  a.href = url;
+  a.download = "myDrawing.png";
+  a.click();
+}
 
 canvas.addEventListener("dblclick", onDoubleClick);
 canvas.addEventListener("mousemove", onMove);
@@ -109,6 +118,8 @@ modeBtn.addEventListener("click", onModeClick);
 destroyBtn.addEventListener("click", onDestroyClick);
 eraserBtn.addEventListener("click", onEraserClick);
 fileInput.addEventListener("change", onFileChange);
+saveBtn.addEventListener("click", onSaveClick);
+
 // getContext("2d")는 HTML5 Canvas 요소에 2D 컨텍스트를 가져오는 데 사용되는 메서드입니다.
 // 2D 컨텍스트는 캔버스 요소에 2D 그래픽을 그리는 데 사용되는 API입니다.
 // getContext("2d") 메서드는 2D 컨텍스트를 가져온 후에는 다양한 메서드를 사용하여 캔버스 요소에 2D 그래픽을 그릴 수 있습니다.
