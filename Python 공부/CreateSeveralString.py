@@ -70,3 +70,6 @@ a.replace("Life", "Your leg")
 # 문자열 자르기
 a.split()  # ()안에 아무것도 없으면 공백 기준
 a.split(":")
+# 문자열로 바꾸기
+int = 3
+str(int)
