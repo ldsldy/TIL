@@ -46,9 +46,12 @@ def print_kwargs(**kwargs):
 
 print_kwargs(name="foo", age=3)  # == {'age':3, 'name': 'foo'}
 
-#매개변수 초기값 미리 정해주기
-#항상 맨뒤에 넣자, 매개변수 순서는 중요하다.
-def say_myself(name, age, man=True) # man값이 없어도 True로 함수를 진행한다.
 
-#lambda 예약어 
-add=lambda a,b: a+b
+# 매개변수 초기값 미리 정해주기
+# 항상 맨뒤에 넣자, 매개변수 순서는 중요하다.
+def say_myself(name, age, man=True):  # man값이 없어도 True로 함수를 진행한다.
+    return man
+
+
+# lambda 예약어
+add = lambda a, b: a + b
